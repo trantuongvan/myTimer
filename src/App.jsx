@@ -7,6 +7,7 @@ import Clock from './components/Clock.jsx'
 import DateComponent from './components/DateComponent.jsx'
 import Temperature from './components/Temperature.jsx'
 import Icon from './components/Icon.jsx'
+import AnalogClock from './components/AnalogClock.jsx'
 // import Parent from './Parent.jsx'
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <DateComponent />
         <Temperature />
       </div>
+      <AnalogClock />
     </div>
   )
 }
