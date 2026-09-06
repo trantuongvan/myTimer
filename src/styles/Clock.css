@@ -1,0 +1,13 @@
+#clock {
+  font-family: "Digital-7", monospace;
+  font-size: 140px;
+  color: #b3f9ff;
+  padding-right: 30px;
+  border-right: 3px solid #b3f9ff;
+  text-shadow: 0 0 7px #b3f9ff;
+}
+.digit {
+  width: 80px;
+  display: inline-flex;
+  justify-content: center;
+}

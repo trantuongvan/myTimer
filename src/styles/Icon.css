@@ -1,0 +1,10 @@
+#icon {
+  color: #b3f9ff;
+  display: grid;
+  margin-right: 30px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
