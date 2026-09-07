@@ -1,10 +1,10 @@
-import { Thermometer } from 'lucide-react';
+import {Thermometer} from './Thermometer.jsx';
 import '../styles/Temperature.css';
 import '../styles/Font.css';
-const Temperature = () => {
+const Temperature = ({ isDarkMode }) => {
 
     return (
-        <div id="temperature"> 
+        <div id="temperature" className={isDarkMode ? 'dark-mode' : 'light-mode'}>
             <Thermometer className='temIcon' /> <p>28°C</p>
         </div>
     )

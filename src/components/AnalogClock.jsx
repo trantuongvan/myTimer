@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../styles/AnalogClock.css';
 
-const AnalogClock = () => {
+const AnalogClock = ({ isDarkMode }) => {
     const [time, setTime] = useState(new Date());
 
     setInterval(() => {
@@ -17,7 +17,7 @@ const AnalogClock = () => {
     const secondDegrees = second * 6;
 
     return (
-        <div id="analog-clock">
+        <div id="analog-clock" className={isDarkMode ? 'dark-mode' : 'light-mode'}>
             <div className="hand hour" style={{ transform: `rotate(${hourDegrees}deg)` }}></div>
             <div className="hand minute" style={{ transform: `rotate(${minuteDegrees}deg)` }}></div>
             <div className="hand second" style={{ transform: `rotate(${secondDegrees}deg)` }}></div>

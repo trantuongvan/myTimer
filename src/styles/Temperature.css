@@ -1,10 +1,14 @@
 #temperature {
   display: flex;
   font-family: "Digital-7", monospace;
-  color: #b3f9ff;
   font-size: 40px;
   padding-top: 10px;
-  border-top: 3px solid #b3f9ff;
+}
+#temperature.light-mode {
+  border-top: 3px solid var(--light-color);
+}
+#temperature.dark-mode {
+  border-top: 3px solid var(--dark-color);
 }
 .temIcon {
   width: 40px;

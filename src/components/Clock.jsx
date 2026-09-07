@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../styles/Clock.css';
 import '../styles/Font.css';
 
-const Clock = () => {
+const Clock = ({ isDarkMode }) => {
     const [time, setTime] = useState(new Date());
 
     setInterval(() => {
@@ -14,7 +14,7 @@ const Clock = () => {
     const second = String(time.getSeconds()).padStart(2, '0');
 
     return (
-        <div id="clock">
+        <div id="clock" className={isDarkMode ? 'dark-mode' : 'light-mode'}>
             <span className="digit">{hour[0]}</span>
             <span className="digit">{hour[1]}</span>
 

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../styles/DateComponent.css';
 import '../styles/Font.css';
 
-const DateComponent = () => {
+const DateComponent = ({ isDarkMode }) => {
     const [date, setDate] = useState(new Date());
 
     setInterval(() => {
@@ -18,7 +18,7 @@ const DateComponent = () => {
     const dayOfMonth = String(date.getDate()).padStart(2, '0');
 
     return (
-        <div id="date">
+        <div id="date" className={isDarkMode ? 'dark-mode' : 'light-mode'}>
             {day} {month} {dayOfMonth}
         </div>
     );

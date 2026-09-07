@@ -1,10 +1,22 @@
 #icon {
-  color: #b3f9ff;
   display: grid;
   margin-right: 30px;
+}
+.light-mode {
+  color: var(--light-color);
+}
+.dark-mode {
+  color: var(--dark-color);
 }
 .icon {
   width: 30px;
   height: 30px;
   margin: 10px;
+  color: inherit;
+}
+#icon-mode {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
 }

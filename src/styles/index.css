@@ -3,17 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../assets/bg-t1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+:root {
+  --dark-color: #b3f9ff;
+  --light-color: #f4e98b;
 }
-
-#root {
+/* #root {
   min-height: 100vh;
   display: grid;
   place-items: center;
-}
+} */

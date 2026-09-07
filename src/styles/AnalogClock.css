@@ -1,10 +1,27 @@
 #analog-clock {
   width: 180px;
   height: 180px;
-  border: 5px solid #b3f9ff;
   border-radius: 50%;
   position: relative;
   margin-left: 30px;
+}
+#analog-clock.light-mode {
+  border: 5px solid var(--light-color);
+  .second {
+    background-color: #eaff0085;
+  }
+  .number {
+    color: var(--light-color);
+  }
+}
+#analog-clock.dark-mode {
+  border: 5px solid var(--dark-color);
+  .second {
+    background-color: #00eaff;
+  }
+  .number {
+    color: var(--dark-color);
+  }
 }
 .hand {
   transform-origin: center bottom;
@@ -13,7 +30,6 @@
   height: 2px; */
   bottom: 50%;
   border-radius: 4px;
-  background-color: #b3f9ff;
   /* top: 50%; */
   left: 50%;
   /* bottom: 50%; */
@@ -33,7 +49,6 @@
 .second {
   width: 2px;
   height: 58px;
-  background-color: #00eaff;
 }
 .center {
   width: 8px;
@@ -49,7 +64,6 @@
 .number {
   position: absolute;
   font-family: "Digital-7", monospace;
-  color: #b3f9ff;
   font-size: 25px;
 }
 .number12 {
